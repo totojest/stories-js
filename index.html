@@ -61,7 +61,11 @@
         </nav>
         <!-- Docking de la SPA (Single Page Application) -->
         <div app>
-
+            <form id="loginForm" class="form-inline">
+                <input type="text" name="loginField" autocomplete="off" class="form-control" placeholder="Votre identification">
+                <input type="password" name="passwordField" autocomplete="off" class="form-control" placeholder="Votre mot de passe">
+                <button type="submit" id="btnLogin" class="btn btn-success" disabled>Connexion</button>
+            </form>
         </div>
 
         <footer>
