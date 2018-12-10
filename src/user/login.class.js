@@ -25,8 +25,8 @@ class Login {
                 const password = $('[name="passwordField"]');
 
                 // Les champs sont-ils remplis?
-                if (login.val() !== '' && password.val() !== '') {
-                    $('#btnLogin').removeAttr('disabled');
+                if (login.val().length >= 5 && password.val() !== '') {
+                    $('#btnLogin').removeAttr('disabled'); // On enlève l'attribut disabled du bouton connexion quand les champs sont remplis et que le login >= 5 caractères
                 }
                 else {
                     $('#btnLogin').attr('disabled', 'disabled'); //remettre la valeur disabled sur l'attribut disabled
