@@ -6,14 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <title>Hello Javascript</title>
+    <!-- Feuille de style -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Titre sera alimenté en JS - /!\ ne jamais faire ça pour un site Web si on veut être référencé -->
-    <h1 id="main-title"></h1>
+    <!-- Conteneur de page. La classe container possède des marges de part et d'autre du "cadre" jusqu'à une certaine largeur minimum  de fenêtre où elles disparaitront -->
+    <div class="container">
 
+
+        <header>
+            <!-- Titre sera alimenté en JS - /!\ ne jamais faire ça pour un site Web si on veut être référencé -->
+            <h1 id="main-title"></h1>
+        </header>
+         <nav class="navbar-nav">
+            <!-- Barre de navigation -->
+            <ul>
+                <li>
+                    <!-- Ligne de la liste -->
+                    <a href="#" title="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="#" title="Toutes les stories">Toutes les stories</a>
+                </li>
+                <li>
+                    <a href="#" title="Mes stories">Mes stories</a>
+                </li>
+            </ul>
+        </nav> 
+        <!-- Docking de la SPA (Single Page Application) -->
+        <div app>
+
+        </div>
+
+        <footer>
+            &copy; Aélion 2018
+        </footer>
+    </div>
+
+
+    <!-- dépendances javascript (jquery avant bootstrap) -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- Premier script JS -->
-    <script src="./assets/javascript/main.js"></script> <!-- refactorage javascript, va chercher le script dans le main.js -->
+    <script src="./assets/javascript/main.js"></script>
+    <!-- refactorage javascript, va chercher le script dans le main.js -->
 </body>
 
 </html>
