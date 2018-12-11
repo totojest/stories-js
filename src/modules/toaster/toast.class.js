@@ -5,7 +5,7 @@
  * @version 1.0.0
  */
 class Toast {
-    constructor(params) {
+    constructor(params) { //On passera en paramètre un objet json, qui sera écrit entre {}, si on veut qu'il soit optionnel, on peut écrire (param = null)
         if (!params.hasOwnProperty('background')) {
             //Paramètre de définition de la couleur de fond du toast (à partir de la classe CSS)
             this.backgroundClass = 'danger';
@@ -43,7 +43,7 @@ class Toast {
         toaster
             .addClass('toast')
             .addClass(this.backgroundClass)
-            .html(this.message);
+            .html('<p>' + this.message + '</p>');
 
         //Ajoute le toaster au document lui-même
         toaster.appendTo($('body'));
