@@ -4,7 +4,7 @@
  * @author Aelion
  * @version 1.0.0
  */
-class MenuUser {
+export class MenuUser {
     constructor(params) {
         $('#menuUtilisateur').removeClass('hidden');
         $('#mesStories').removeClass('disabled');

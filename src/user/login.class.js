@@ -1,4 +1,8 @@
-class Login {
+import { User } from './user.class';
+import { MenuUser } from './menuUser.class';
+import { Toast } from './../modules/toaster/toast.class';
+
+export class Login {
     constructor() {
         //console.log('Je suis le constructeur de Login') // pour tester que le constructeur marche bien
         //Modifier le titre du document HTML
