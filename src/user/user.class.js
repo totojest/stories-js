@@ -34,7 +34,7 @@ class User {
  */
     authenticate() {
         if (this.userName === 'tjestin' && this.password === 'tjest') {
-            this.group = 'Administrateur';
+            this.group = 'Nul';
             return true;
         }
     }

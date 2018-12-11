@@ -33,24 +33,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" title="Accueil">Accueil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#" id="accueil">Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" title="Toutes les stories">Toutes les stories</a>
+                        <a class="nav-link disabled" href="#" id="toutesStories">Toutes les stories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" title="Mes stories">Mes stories</a>
+                        <a class="nav-link disabled" href="#" id="mesStories">Mes stories</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" id="utilisateur" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             Utilisateur
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-menu hidden" aria-labelledby="navbarDropdown" id="menuUtilisateur">
+                            <a class="dropdown-item" href="#" id="action">Action</a>
+                            <a class="dropdown-item" href="#" id="anotherAction">Another action</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Se connecter</a>
+                            <a class="dropdown-item" href="#" id="connecter">Se connecter</a>
                         </div>
                     </li>
                 </ul>
@@ -79,6 +79,7 @@
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./src/modules/toaster/toast.class.js"></script>
+    <script src="./src/user/menuUser.class.js"></script>
     <script src="./src/user/user.class.js"></script>
     <script src="./src/user/login.class.js"></script>
     <!-- Premier script JS -->

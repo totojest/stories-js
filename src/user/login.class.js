@@ -52,6 +52,7 @@ class Login {
                 // Gère l'authentification
                 if (user.authenticate()) {
                     console.log('Tu peux y aller');
+                    const menu = new MenuUser(user);
                 } else {
                     console.log('Non, pas le droit');
                     login.val(''); // ou $('[name="loginField"]').val('') , ça marche aussi si on n'avait pas défini les attributs (à rappeler aussi en "let" au début de la méthode)
