@@ -55,6 +55,7 @@ export class Toast {
             function () {
                 //Ici, quand on arrive au bout de l'intervalle de temps
                 toaster
+                /*.remove();*/
                 .removeClass('fadeInDownBig')
                 .addClass('bounceOutLeft')
                 ;

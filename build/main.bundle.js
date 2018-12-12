@@ -187,7 +187,9 @@ var Toast = exports.Toast = function () {
             // Affichage pendant un certain temps
             setTimeout(function () {
                 //Ici, quand on arrive au bout de l'intervalle de temps
-                toaster.removeClass('fadeInDownBig').addClass('bounceOutLeft');
+                toaster
+                /*.remove();*/
+                .removeClass('fadeInDownBig').addClass('bounceOutLeft');
             }, this.duration * 1000);
         }
     }]);
