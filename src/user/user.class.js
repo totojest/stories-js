@@ -4,7 +4,7 @@
  * @author Aelion
  * @version 1.0.0
  */
-class User {
+export class User {
     constructor() {
 
     }
@@ -34,7 +34,7 @@ class User {
  */
     authenticate() {
         if (this.userName === 'tjestin' && this.password === 'tjest') {
-            this.group = 'Administrateur';
+            this.group = 'Nul';
             return true;
         }
     }

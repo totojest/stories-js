@@ -4,7 +4,7 @@
  * @author Aelion
  * @version 1.0.0
  */
-class Toast {
+export class Toast {
     constructor(params) { //On passera en paramètre un objet json, qui sera écrit entre {}, si on veut qu'il soit optionnel, on peut écrire (param = null)
         if (!params.hasOwnProperty('background')) {
             //Paramètre de définition de la couleur de fond du toast (à partir de la classe CSS)
@@ -43,6 +43,8 @@ class Toast {
         toaster
             .addClass('toast')
             .addClass(this.backgroundClass)
+            .addClass('animated')
+            .addClass('fadeInDownBig')
             .html('<p>' + this.message + '</p>');
 
         //Ajoute le toaster au document lui-même
@@ -52,7 +54,9 @@ class Toast {
         setTimeout(
             function () {
                 //Ici, quand on arrive au bout de l'intervalle de temps
-                toaster.remove();
+                toaster
+                .remove()
+                .addClass('fadeOutRightBig');
             },
             this.duration * 1000
         );

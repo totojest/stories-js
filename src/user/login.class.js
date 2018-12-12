@@ -1,4 +1,8 @@
-class Login {
+import { User } from './user.class';
+import { MenuUser } from './menuUser.class';
+import { Toast } from './../modules/toaster/toast.class';
+
+export class Login {
     constructor() {
         //console.log('Je suis le constructeur de Login') // pour tester que le constructeur marche bien
         //Modifier le titre du document HTML
@@ -52,6 +56,7 @@ class Login {
                 // Gère l'authentification
                 if (user.authenticate()) {
                     console.log('Tu peux y aller');
+                    const menu = new MenuUser(user);
                 } else {
                     console.log('Non, pas le droit');
                     login.val(''); // ou $('[name="loginField"]').val('') , ça marche aussi si on n'avait pas défini les attributs (à rappeler aussi en "let" au début de la méthode)

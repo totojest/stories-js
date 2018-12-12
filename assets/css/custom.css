@@ -24,3 +24,10 @@
 .toast.warning p {
     background-color: rgba(231, 157, 19, 0.986);
  }
+
+ /**
+ * Classe hidden: pour cacher des éléments
+ */
+ .hidden {
+     visibility: hidden;
+ }
